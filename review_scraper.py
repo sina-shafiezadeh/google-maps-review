@@ -15,7 +15,7 @@ import re
 # set url address
 url = "https://www.google.com/maps/..."
 
-# active web driver
+# open web driver
 driver = selenium.webdriver.Chrome(r"...\chromedriver.exe")
 driver.get(url)
 time.sleep(5)
@@ -51,7 +51,7 @@ star_rate = pd.Series(response.find_all('span', class_='section-review-stars')).
 publish_review = pd.Series(response.find_all('span', class_='section-review-publish-date')).to_frame(name='publish_date')
 comments = pd.concat([review_text,star_rate,publish_review] , axis=1)
 
-# close page
+# close web driver
 driver.close()
    
 # data cleaning
