@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import selenium
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -25,9 +19,6 @@ from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 sid = SentimentIntensityAnalyzer()
-
-
-# In[4]:
 
 
 ######################################################### data scraping
@@ -150,7 +141,7 @@ raw_data_step_three.to_csv(r'D:\\Sina\\Desktop\\mac donald\\data\\cleaned data p
 
 ############################################## data Pre-processing: tokenization, stemming, and removal of stop words
 
-'''' remove this step bacause it makes corollation score more less rather than same score before pre-processing
+#remove this step bacause it makes corollation score more less rather than same score before pre-processing
 
 
 country_name = "Vietnam"
