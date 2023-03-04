@@ -1,4 +1,4 @@
-# google-maps-review
+## google-maps-review
 
  This repository is to extract the comments associated with a specific location on Google Maps. This can be achieved by providing the URL of the location to the program or script. Once the URL is provided, the program should navigate to the location's page on Google Maps and retrieve all the comments associated with it.
 
